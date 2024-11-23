@@ -48,3 +48,9 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Formatter: [Prettier]("https://prettier.io")
 1. Unit tests: [Jest]("https://jestjs.io")
 1. End to End test (E2E): [Playwright]("https://playwright.dev")
+
+## Todo
+
+1. Run E2E tests ✅
+1. Move E2E folders ✅
+1. Install a UI components folder as a package
