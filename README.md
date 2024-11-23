@@ -47,7 +47,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Linter: [ESLint](https://eslint.org)
 1. Formatter: [Prettier](https://prettier.io)
 1. Unit tests: [Jest](https://jestjs.io)
-1. End to End test (E2E): [Playwright](https://playwright.dev)
+1. E2E test: [Playwright](https://playwright.dev)
 
 ## Todo
 
