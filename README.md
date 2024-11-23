@@ -18,6 +18,13 @@ npx nx serve landing
 ```
 
 ```sh
+# End to End (E2E) test:
+npx nx e2e admin-e2e
+npx nx e2e inbox-e2e
+npx nx e2e landing-e2e
+```
+
+```sh
 # Create production bundles:
 npx nx build admin
 npx nx build inbox
