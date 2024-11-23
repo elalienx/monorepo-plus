@@ -54,3 +54,4 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Run E2E tests ✅
 1. Move E2E folders ✅
 1. Install a UI components folder as a package ✅
+1. Remove Vite CJS warning on serve and e2e testing
