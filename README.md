@@ -69,4 +69,6 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Move E2E folders ✅
 1. Install a UI components folder as a package ✅
 1. Remove Vite CJS warning on serve and e2e testing
+1. Add native HTLM modals
+1. Add Toast notification
 1. Document folder structure (add "integrations" for BankId, Optimizely, etc.)
