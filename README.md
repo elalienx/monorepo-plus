@@ -17,6 +17,13 @@ Additional NX information: [NX Guide](NX_GUIDE.md)
 
 ## Run commands
 
+You need to have Node installed before running these commands. (I used Node 20 LTS)
+
+```sh
+# Install dependencies
+npm install
+```
+
 ```sh
 # Start projects:
 npx nx serve admin
