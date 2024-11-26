@@ -66,3 +66,9 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Create shared folder for components. ✅
 1. Set up a CI pipeline to run on feature branches instead of relying on main. ✅
 1. Replace dependencies using CommonJS to ones using ES imports. ✅
+1. Build Admin page layout
+1. Add form handling
+1. Add state management
+1. Add fetching
+1. Add unit testing
+1. Add component library
