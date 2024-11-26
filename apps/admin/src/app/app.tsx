@@ -6,6 +6,7 @@ export function App() {
   return (
     <div>
       <NxWelcome title="admin" />
+      <p>👩‍💼 Admin</p>
     </div>
   );
 }
