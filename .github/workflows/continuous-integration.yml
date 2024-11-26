@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  actions: read
+  contents: read
+
+jobs:
+  end-to-end-tests:
+    name: End to End testing with Playwright
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Node with enabled cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install project dependencies
+        run: npm clean-install --legacy-peer-deps
+
+      - name: Install web browsers
+        run: npx playwright install --with-deps
+
+      - name: Set NX dependency caching
+        uses: nrwl/nx-set-shas@v4
+
+      - name: Run affected NX targets
+        run: npx nx affected -t lint build e2e
