@@ -31,4 +31,5 @@ jobs:
       - uses: nrwl/nx-set-shas@v4
 
       # Run devOps pipeline
-      - run: npx nx affected -t lint test build e2e
+      # - run: npx nx affected -t lint test build e2e (removed tests until we have some)
+      - run: npx nx affected -t lint build e2e
