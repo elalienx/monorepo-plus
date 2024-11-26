@@ -59,8 +59,8 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 
 ## Todo
 
-1. Create 3 apps.
-1. Create separated E2E folders for apps.
-1. Rename E2E command for easier use.
+1. Create 3 apps. ✅
+1. Create separated E2E folders for apps. ✅
+1. Rename E2E command for easier use. ✅
 1. Create basic HTML for apps.
 1. Create shared folder for components.
