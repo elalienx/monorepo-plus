@@ -1,42 +1,39 @@
 /// <reference types='vitest' />
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
+import { nxCopyAssetsPlugin } from "@nx/vite/plugins/nx-copy-assets.plugin";
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/inbox',
+  cacheDir: "../../node_modules/.vite/apps/inbox",
   server: {
     port: 4200,
-    host: 'localhost',
+    host: "localhost",
   },
   preview: {
     port: 4300,
-    host: 'localhost',
+    host: "localhost",
   },
-  plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
+  plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(["*.md"])],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
   // },
   build: {
-    outDir: '../../dist/apps/inbox',
+    outDir: "../../dist/apps/inbox",
     emptyOutDir: true,
     reportCompressedSize: true,
-    commonjsOptions: {
-      transformMixedEsModules: true,
-    },
   },
   test: {
     watch: false,
     globals: true,
-    environment: 'jsdom',
-    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-    reporters: ['default'],
+    environment: "jsdom",
+    include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
+    reporters: ["default"],
     coverage: {
-      reportsDirectory: '../../coverage/apps/inbox',
-      provider: 'v8',
+      reportsDirectory: "../../coverage/apps/inbox",
+      provider: "v8",
     },
   },
 });
