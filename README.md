@@ -28,7 +28,7 @@ npm install
 npx playwright install
 ```
 
-## Run commands
+## Main commands
 
 ```sh
 # Start projects (one per terminal tab):
@@ -49,6 +49,16 @@ npx nx e2e playwright-landing
 npx nx build admin
 npx nx build inbox
 npx nx build landing
+```
+
+## Support commands
+
+```sh
+# Show graph
+npx nx graph
+
+# Move a folder
+nx g @nx/workspace:move --project my-folder --destination shared/my-folder
 ```
 
 ## Tech stack
