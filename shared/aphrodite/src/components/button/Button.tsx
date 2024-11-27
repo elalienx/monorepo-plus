@@ -14,7 +14,7 @@ export default function Button({ label, onClick }: ButtonProps) {
   return (
     <button className="button" onClick={onClick}>
       <img src={Image} />
-      {label}
+      {label}!
     </button>
   );
 }
