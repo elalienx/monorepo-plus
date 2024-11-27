@@ -10,11 +10,11 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-export default function Button({ label, onClick }: ButtonProps) {
+export function Button({ label, onClick }: ButtonProps) {
   return (
     <button className="button" onClick={onClick}>
-      <img src={Image} />
-      {label}!
+      <img src={Image} alt="a credit card icon with a 3d style" />
+      {label}
     </button>
   );
 }
