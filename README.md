@@ -11,19 +11,24 @@ Additional NX information: [NX Guide](NX_GUIDE.md)
 
 ## Table of contents
 
+1. [Installation](#installation)
 1. [Run commands](#run-commands)
 1. [Tech stack](#tech-stack)
 1. [To do](#to-do)
 
-## Run commands
+## Installation
 
 You need to have Node installed before running these commands. (I used Node 20 LTS)
 
 ```sh
 # Install dependencies
 npm install
-npx playwright install # browsers for E2E
+
+ # web browsers required for E2E (optional)
+npx playwright install
 ```
+
+## Run commands
 
 ```sh
 # Start projects (one per terminal tab):
