@@ -1,5 +1,5 @@
 // Shared
-import { Button } from "@monorepo-plus/components";
+import { Button } from "@monorepo-plus/aphrodite";
 
 export default function App() {
   return (
