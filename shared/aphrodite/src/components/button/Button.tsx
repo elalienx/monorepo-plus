@@ -1,6 +1,6 @@
 // Project files
+import Image from "../../assets/credit-card.png";
 import "./button.css";
-import Image from "../assets/credit-card.png";
 
 interface ButtonProps {
   label: string;
