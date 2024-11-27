@@ -59,6 +59,8 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 
 ## Todo
 
+### Infrastructure
+
 1. Create 3 apps. ✅
 1. Create separated E2E folders for apps. ✅
 1. Rename E2E command for easier use. ✅
@@ -66,7 +68,11 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Create shared folder for components. ✅
 1. Set up a CI pipeline to run on feature branches instead of relying on main. ✅
 1. Replace dependencies using CommonJS to ones using ES imports. ✅
-1. Build Admin page layout
+
+### Busines app page
+
+1. Create navigation sidebar
+1. Create page
 1. Add form handling
 1. Add state management
 1. Add fetching
