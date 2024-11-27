@@ -3,7 +3,10 @@ import Image from "../../assets/credit-card.png";
 import "./button.css";
 
 interface ButtonProps {
+  /** The button text. */
   label: string;
+
+  /** The action to trigger when press. */
   onClick: () => void;
 }
 
