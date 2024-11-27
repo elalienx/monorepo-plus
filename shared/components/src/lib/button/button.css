@@ -3,4 +3,11 @@
   color: white;
   border: none;
   -webkit-appearance: none;
+
+  img {
+    width: 24px;
+    height: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
 }
