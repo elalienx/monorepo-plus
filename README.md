@@ -39,9 +39,9 @@ npx nx serve landing
 
 ```sh
 # End to End (E2E) test:
-npx nx e2e playwright-admin
-npx nx e2e playwright-inbox
-npx nx e2e playwright-landing
+npx nx e2e admin-e2e
+npx nx e2e inbox-e2e
+npx nx e2e landing-e2e
 ```
 
 ```sh
