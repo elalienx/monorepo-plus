@@ -57,8 +57,17 @@ npx nx build landing
 # Show graph
 npx nx graph
 
-# Move a folder
-nx g @nx/workspace:move --project my-folder --destination shared/my-folder
+# Move project
+npx nx g @nx/workspace:move --project my_project --destination folder/my_project
+
+# Remove project
+npx nx g remove my_project
+
+# Create project app
+npx nx g @nx/react:app apps/my_app
+
+# Create project lib
+npx nx g @nx/react:lib shared/my_lib
 ```
 
 ## Tech stack
