@@ -39,9 +39,9 @@ npx nx serve landing
 
 ```sh
 # End to End (E2E) test:
-npx nx e2e playwright-admin
-npx nx e2e playwright-inbox
-npx nx e2e playwright-landing
+npx nx e2e admin-e2e
+npx nx e2e inbox-e2e
+npx nx e2e landing-e2e
 ```
 
 ```sh
@@ -57,8 +57,17 @@ npx nx build landing
 # Show graph
 npx nx graph
 
-# Move a folder
-nx g @nx/workspace:move --project my-folder --destination shared/my-folder
+# Move project
+npx nx g @nx/workspace:move --project my_project --destination folder/my_project
+
+# Remove project
+npx nx g remove my_project
+
+# Create project app
+npx nx g @nx/react:app apps/my_app
+
+# Create project lib
+npx nx g @nx/react:lib shared/my_lib
 ```
 
 ## Tech stack

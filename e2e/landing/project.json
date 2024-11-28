@@ -1,9 +1,9 @@
 {
-  "name": "playwright-landing",
+  "name": "landing-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "e2e/landing/src",
   "implicitDependencies": ["landing"],
-  "// targets": "to see all targets run: nx show project playwright-landing --web",
+  "// targets": "to see all targets run: nx show project landing-e2e --web",
   "targets": {}
 }
