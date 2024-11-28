@@ -92,6 +92,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Create shared folder for components. ✅
 1. Set up a CI pipeline to run on feature branches instead of relying on main. ✅
 1. Replace dependencies using CommonJS to ones using ES imports. ✅
+1. Fix folder structure blocking NX to understand the E2E folders. ✅
 
 ### Busines app page
 
