@@ -12,6 +12,10 @@ export default defineConfig({
     port: 4200,
     host: "localhost",
   },
+  preview: {
+    port: 4300,
+    host: "localhost",
+  },
   plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(["*.md"])],
   build: {
     outDir: "../../dist/apps/admin",
