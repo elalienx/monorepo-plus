@@ -17,6 +17,7 @@
 1. Replace NPM with PNPM. ✅
 1. Cache Playwright browsers on CI. [example](https://github.com/microsoft/playwright/issues/7249#issuecomment-2334627973)
 1. Improve Cosmos commands. (centralized like Biome)
+1. Cache Biome on CI.
 
 ### Busines app page
 
