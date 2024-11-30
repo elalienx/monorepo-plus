@@ -34,5 +34,11 @@ jobs:
       - name: Specity the base and head SHAs for the "nx affected" command
         uses: nrwl/nx-set-shas@v4
 
+      - name: Biome lint and formating
+        run: |
+          npx biome check --write apps/admin/src && 
+          npx biome check --write apps/inbox/src && 
+          npx biome check --write apps/landing/src
+
       - name: Run affected NX targets
-        run: npx nx affected -t lint build e2e
+        run: npx nx affected -t build e2e
