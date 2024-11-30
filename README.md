@@ -38,6 +38,13 @@ npx nx serve landing
 ```
 
 ```sh
+# Unit testing:
+npx nx test admin
+npx nx test inbox
+npx nx test landing
+```
+
+```sh
 # End to End (E2E) test:
 npx nx e2e admin-e2e
 npx nx e2e inbox-e2e
@@ -54,6 +61,8 @@ npx nx biome-check landing
 ```sh
 # View UI component gallery:
 npx nx run admin:cosmos
+npx nx run inbox:cosmos
+npx nx run landing:cosmos
 ```
 
 ```sh
