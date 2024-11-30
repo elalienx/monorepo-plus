@@ -21,6 +21,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 9
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -28,10 +30,18 @@ jobs:
           node-version: 20
           cache: "pnpm"
 
+      - name: Cache Playwright browsers
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-browsers-${{ runner.os }}-${{ hashFiles('**/package-lock.json', '**/pnpm-lock.yaml') }}
+          restore-keys: |
+            playwright-browsers-${{ runner.os }}-
+
       - name: Install project dependencies
         run: pnpm install
 
-      - name: Install Playwright browsers
+      - name: Install Playwright browsers (if not cached)
         run: npx playwright install --with-deps
 
       - name: Specify the base and head SHAs for the "nx affected" command
