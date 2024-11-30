@@ -36,9 +36,9 @@ jobs:
 
       - name: Biome lint and formating
         run: |
-          npx biome check --write apps/admin/src && 
-          npx biome check --write apps/inbox/src && 
-          npx biome check --write apps/landing/src
+          npx nx biome-check admin &&
+          npx nx biome-check inbox && 
+          npx nx biome-check landing
 
       - name: Run affected NX targets
         run: npx nx affected -t build e2e
