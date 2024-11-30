@@ -29,7 +29,10 @@ jobs:
           cache: "pnpm"
 
       - name: Install project dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Install NX globally for caching
+        run: pnpm add --global nx
 
       - name: Install Playwright
         id: install-playwright
@@ -45,9 +48,9 @@ jobs:
 
       - name: Biome lint and formatting
         run: |
-          npx nx biome-check admin &&
-          npx nx biome-check inbox && 
-          npx nx biome-check landing
+          nx biome-check admin &&
+          nx biome-check inbox && 
+          nx biome-check landing
 
       - name: Run affected NX targets
-        run: npx nx affected -t build e2e
+        run: nx affected -t build e2e
