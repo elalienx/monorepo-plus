@@ -23,10 +23,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
+          cache: "pnpm" # Use pnpm for caching
 
-      - name: Install PNPM for faster installs
-        run: npm install -g pnpm
+      - name: Install PNPM globally for faster installs
+        run: |
+          npm install -g pnpm
+          echo "::add-path::$(npm bin -g)"
 
       - name: Install project dependencies
         run: pnpm install --legacy-peer-deps
