@@ -33,13 +33,12 @@ jobs:
 
       - name: Install Playwright
         id: install-playwright
-        uses: ./.github/actions/install-playwright
-        with:
-          working-directory: ./some-subfolder-if-applicable
-          browsers: chromium webkit
+        uses: ./.github/actions/playwright
 
-      - run: echo Playwright version: "${{ steps.install-playwright.outputs.version }}"
-      - run: echo Playwright cached: "${{ steps.install-playwright.outputs.cache-hit }}"
+      - name: Debug Playwright cache
+        run: |
+          echo "Playwright version – ${{ steps.install-playwright.outputs.version }}"
+          echo "Playwright cached – ${{ steps.install-playwright.outputs.cache-hit }}"
 
       - name: Specify the base and head SHAs for the "nx affected" command
         uses: nrwl/nx-set-shas@v4
