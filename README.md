@@ -77,8 +77,8 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Monorepo: [NX](https://nx.dev)
 1. Bundler: [Vite](https://vite.dev)
 1. Linter: [Biome](https://biomejs.dev)
-1. Formatter: [Prettier](https://prettier.io)
-1. Unit tests: [Jest](https://jestjs.io)
+1. Formatter: Biome as well.
+1. Unit tests: [Vitest](https://vitest.dev)
 1. E2E test: [Playwright](https://playwright.dev)
 
 ## Todo
@@ -95,7 +95,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Fix folder structure blocking NX to understand the E2E folders. ✅
 1. Replace ESlint for Biome. ✅
 1. Remove Babel. ✅
-1. Replace Jest for Vitest.
+1. Replace Jest for Vitest. ✅
 
 ### Busines app page
 
