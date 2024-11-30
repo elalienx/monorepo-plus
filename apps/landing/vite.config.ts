@@ -1,5 +1,6 @@
 /// <reference types='vitest' />
 import { defineConfig } from "vite";
+import { configDefaults } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { nxViteTsPaths } from "@nx/vite/plugins/nx-tsconfig-paths.plugin";
 import { nxCopyAssetsPlugin } from "@nx/vite/plugins/nx-copy-assets.plugin";
@@ -16,24 +17,14 @@ export default defineConfig({
     host: "localhost",
   },
   plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(["*.md"])],
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
-  // },
   build: {
     outDir: "../../dist/apps/landing",
     emptyOutDir: true,
     reportCompressedSize: true,
   },
   test: {
-    watch: false,
-    globals: true,
-    environment: "jsdom",
-    include: ["src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
-    reporters: ["default"],
-    coverage: {
-      reportsDirectory: "../../coverage/apps/landing",
-      provider: "v8",
-    },
+    globals: true, // Enable global test APIs like expect, describe, it
+    environment: "jsdom", // Use jsdom environment for DOM-related tests
+    exclude: [...configDefaults.exclude, "**/node_modules/**"], // Exclude unnecessary files
   },
 });

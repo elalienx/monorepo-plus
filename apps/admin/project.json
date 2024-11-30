@@ -11,6 +11,12 @@
       "options": {
         "command": "npx @biomejs/biome check --write apps/admin/src"
       }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "options": {
+        "testRunner": "vitest"
+      }
     }
   }
 }
