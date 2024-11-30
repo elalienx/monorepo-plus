@@ -19,16 +19,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Node.js with enabled cache
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm" # Use pnpm for caching
-
-      - name: Install PNPM globally for faster installs
-        run: |
-          npm install -g pnpm
-          echo "::add-path::$(npm bin -g)"
+          cache: "pnpm"
 
       - name: Install project dependencies
         run: pnpm install --legacy-peer-deps
