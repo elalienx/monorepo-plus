@@ -63,8 +63,9 @@ npx nx g @nx/workspace:move --project my_project --destination folder/my_project
 # Remove project
 npx nx g remove my_project
 
-# Create project app
+# Create project app (and enable linting)
 npx nx g @nx/react:app apps/my_app
+nx g @gitopslovers/nx-biome:configuration --project my_app
 
 # Create project lib
 npx nx g @nx/react:lib shared/my_lib
