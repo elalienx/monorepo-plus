@@ -15,7 +15,8 @@
     "cosmos": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "cosmos --expose-imports"
+        "command": "cosmos --expose-imports",
+        "cwd": "apps/admin"
       }
     },
     "test": {

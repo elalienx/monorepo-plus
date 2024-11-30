@@ -1,6 +1,6 @@
 {
   "plugins": ["react-cosmos-plugin-vite"],
-  "rootDir": "./apps/admin/",
+  "rootDir": "./",
   "vite": {
     "configPath": "./vite.config.ts"
   }
