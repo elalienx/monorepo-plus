@@ -12,6 +12,13 @@
         "command": "npx @biomejs/biome check --write apps/admin/src"
       }
     },
+    "cosmos": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cosmos --expose-imports",
+        "cwd": "apps/admin"
+      }
+    },
     "test": {
       "executor": "@nx/vite:test",
       "options": {
