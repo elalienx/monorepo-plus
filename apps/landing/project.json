@@ -9,7 +9,7 @@
     "biome-check": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx biome npx @biomejs/biome --write apps/landing/src"
+        "command": "npx @biomejs/biome check --write apps/landing/src"
       }
     }
   }

@@ -9,7 +9,7 @@
     "biome-check": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx npx @biomejs/biome check --write apps/inbox/src"
+        "command": "npx @biomejs/biome check --write apps/inbox/src"
       }
     }
   }
