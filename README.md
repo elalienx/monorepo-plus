@@ -88,4 +88,3 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Unit tests: [Vitest](https://vitest.dev)
 1. E2E test: [Playwright](https://playwright.dev)
 1. UI gallery: [React Cosmos](https://reactcosmos.org)
-1. Add fetching.
