@@ -45,7 +45,7 @@
   "generators": {
     "@nx/react": {
       "application": {
-        "babel": true,
+        "babel": false,
         "style": "css",
         "bundler": "vite"
       },
