@@ -44,12 +44,18 @@ npx nx e2e inbox-e2e
 npx nx e2e landing-e2e
 ```
 
+````sh
+# Lint and format code with Biome:
+nx biome-check admin
+nx biome-check inbox
+nx biome-check landing
+
 ```sh
 # Create production bundles:
 npx nx build admin
 npx nx build inbox
 npx nx build landing
-```
+````
 
 ## Support commands
 
