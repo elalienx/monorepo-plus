@@ -25,16 +25,16 @@ jobs:
           node-version: 20
           cache: "npm"
 
+      - name: Install PNPM for faster installs
+        run: npm install -g pnpm
+
       - name: Install project dependencies
-        run: npm clean-install --legacy-peer-deps
+        run: pnpm install --legacy-peer-deps
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
-
-      - name: Specity the base and head SHAs for the "nx affected" command
+      - name: Specify the base and head SHAs for the "nx affected" command
         uses: nrwl/nx-set-shas@v4
 
-      - name: Biome lint and formating
+      - name: Biome lint and formatting
         run: |
           npx nx biome-check admin &&
           npx nx biome-check inbox && 

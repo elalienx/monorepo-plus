@@ -7,8 +7,6 @@ This project is a "learn by doing" spike with these goals:
 1. Learn to document multi-projects setups.
 1. Use the documentation as a refactor guideline.
 
-Additional NX information: [NX Guide](NX_GUIDE.md)
-
 ## Table of contents
 
 1. [Installation](#installation)
@@ -20,9 +18,9 @@ Additional NX information: [NX Guide](NX_GUIDE.md)
 
 This project has 3 apps and 1 shared library.
 
-- 👩‍💼 Admin: The control panel for customer support and sales teams to manage customers loan.
-- 📥 Inbox: The control panel allowing customers to manage their loan.
-- 🌎 Landing: The homepage to entice customers to sign-up and apply for a loan.
+- 👩‍💼 Admin: Control panel for customer support and sales teams to manage customers loans.
+- 📥 Inbox: Control panel for customers to manage their loans.
+- 🌎 Landing: Homepage designed to attract customers to apply for a loan.
 - 🏛️ Aphrodite: The shared UI library used across apps.
 
 ## Installation
