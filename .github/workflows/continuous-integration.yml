@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   end-to-end-tests:
-    name: End to End testing with Playwright
+    name: End to End testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -28,15 +28,7 @@ jobs:
       - name: Install project dependencies
         run: npm clean-install --legacy-peer-deps
 
-      - name: Cache Playwright browsers
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-browsers-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}
-          restore-keys: |
-            playwright-browsers-
-
-      - name: Install Playwright browsers if not cached
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Specity the base and head SHAs for the "nx affected" command
