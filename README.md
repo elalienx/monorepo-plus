@@ -108,6 +108,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Add Cosmos. ✅
 1. Replace NPM with PNPM. ✅
 1. Cache Playwright browsers on CI.
+1. Improve Cosmos commands. (centralized like Biome)
 
 ### Busines app page
 
