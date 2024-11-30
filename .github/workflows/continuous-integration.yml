@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   end-to-end-tests:
-    name: End to End testing with Playwright
+    name: End to End testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -28,11 +28,17 @@ jobs:
       - name: Install project dependencies
         run: npm clean-install --legacy-peer-deps
 
-      - name: Install web browsers
+      - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Specity the base and head SHAs for the "nx affected" command
         uses: nrwl/nx-set-shas@v4
 
+      - name: Biome lint and formating
+        run: |
+          npx nx biome-check admin &&
+          npx nx biome-check inbox && 
+          npx nx biome-check landing
+
       - name: Run affected NX targets
-        run: npx nx affected -t lint build e2e
+        run: npx nx affected -t build e2e
