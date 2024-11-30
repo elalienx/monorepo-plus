@@ -107,7 +107,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Replace Jest for Vitest. ✅
 1. Add Cosmos. ✅
 1. Replace NPM with PNPM. ✅
-1. Cache Playwright browsers on CI.
+1. Cache Playwright browsers on CI. [example](https://github.com/microsoft/playwright/issues/7249#issuecomment-2334627973)
 1. Improve Cosmos commands. (centralized like Biome)
 
 ### Busines app page
