@@ -16,6 +16,15 @@ Additional NX information: [NX Guide](NX_GUIDE.md)
 1. [Tech stack](#tech-stack)
 1. [To do](#to-do)
 
+## Project structure
+
+This project has 3 apps and 1 shared library.
+
+- 👩‍💼 Admin: The control panel for customer support and sales teams to manage customers loan.
+- 📥 Inbox: The control panel allowing customers to manage their loan.
+- 🌎 Landing: The homepage to entice customers to sign-up and apply for a loan.
+- 🏛️ Aphrodite: The shared UI library used across apps.
+
 ## Installation
 
 You need to have Node installed before running these commands. (I used Node 20 LTS)
@@ -30,46 +39,26 @@ npx playwright install
 
 ## Main commands
 
+The apps 👩‍💼 Admin, 📥 Inbox, and 🌎 Landing share the same commands, replace `admin` for `inbox`, and `landing` to run those as well.
+
 ```sh
 # Start projects (one per terminal tab):
 npx nx serve admin
-npx nx serve inbox
-npx nx serve landing
-```
 
-```sh
 # Unit testing:
 npx nx test admin
-npx nx test inbox
-npx nx test landing
-```
 
-```sh
-# End to End (E2E) test:
-npx nx e2e admin-e2e
-npx nx e2e inbox-e2e
-npx nx e2e landing-e2e
-```
-
-```sh
-# Lint and format code with Biome:
-npx nx biome-check admin
-npx nx biome-check inbox
-npx nx biome-check landing
-```
-
-```sh
-# View UI component gallery:
-npx nx run admin:cosmos
-npx nx run inbox:cosmos
-npx nx run landing:cosmos
-```
-
-```sh
 # Create production bundles:
 npx nx build admin
-npx nx build inbox
-npx nx build landing
+
+# Lint and format code with Biome:
+npx nx biome-check admin
+
+# View UI component gallery:
+npx nx run admin:cosmos
+
+# End to End (E2E) test:
+npx nx e2e admin-e2e
 ```
 
 ## Support commands
@@ -84,10 +73,10 @@ npx nx g @nx/workspace:move --project my_project --destination folder/my_project
 # Remove project
 npx nx g remove my_project
 
-# Create project app
+# Create an app project
 npx nx g @nx/react:app apps/my_app
 
-# Create project lib
+# Create a library project
 npx nx g @nx/react:lib shared/my_lib
 ```
 
