@@ -101,6 +101,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Formatter: Biome as well.
 1. Unit tests: [Vitest](https://vitest.dev)
 1. E2E test: [Playwright](https://playwright.dev)
+1. UI gallery: [React Cosmos](https://reactcosmos.org)
 
 ## Todo
 
@@ -117,7 +118,7 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Replace ESlint for Biome. ✅
 1. Remove Babel. ✅
 1. Replace Jest for Vitest. ✅
-1. Add Cosmos
+1. Add Cosmos. ✅
 1. Replace NPM with PNPM
 
 ### Busines app page
@@ -127,5 +128,3 @@ This is the global tech stack for the monorepo, for each indivual app, check the
 1. Add form handling
 1. Add state management
 1. Add fetching
-1. Add unit testing
-1. Add component library
