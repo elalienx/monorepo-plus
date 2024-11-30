@@ -2,9 +2,7 @@
   "name": "@monorepo-plus/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "cosmos": "cosmos --expose-imports"
-  },
+  "scripts": {},
   "private": true,
   "type": "module",
   "dependencies": {
