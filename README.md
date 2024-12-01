@@ -28,7 +28,7 @@ You need to have Node installed before running these commands. (I used Node 20 L
 
 ```sh
 # Install dependencies
-npm install
+pnpm install
 
 # web browsers required for E2E (optional)
 npx playwright install
