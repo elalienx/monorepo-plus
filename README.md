@@ -27,8 +27,8 @@ This project has 3 apps and 1 shared library.
 You need to have Node installed before running these commands. (I used Node 20 LTS)
 
 ```sh
-# Install dependencies
-pnpm install
+# Install dependencies consistently across teams
+pnpm install --frozen-lockfile
 
 # web browsers required for E2E (optional)
 npx playwright install
