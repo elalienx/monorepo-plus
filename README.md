@@ -39,7 +39,7 @@ npx playwright install
 The apps 👩‍💼 Admin, 📥 Inbox, and 🌎 Landing share the same commands, replace `admin` for `inbox`, and `landing` to run those as well.
 
 ```sh
-# Start projects (one per terminal tab):
+# Start projects
 npx nx serve admin
 
 # Unit testing:
