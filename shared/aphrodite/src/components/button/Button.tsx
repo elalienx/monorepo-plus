@@ -1,3 +1,5 @@
+"use client";
+
 // Project files
 import Image from "../../assets/credit-card.png";
 import "./button.css";
