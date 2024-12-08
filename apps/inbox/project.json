@@ -1,7 +1,7 @@
 {
   "name": "inbox",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/inbox/src",
+  "sourceRoot": "apps/inbox",
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project inbox --web",
@@ -10,19 +10,6 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "npx @biomejs/biome check --write apps/inbox/src"
-      }
-    },
-    "cosmos": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "cosmos --expose-imports",
-        "cwd": "apps/admin"
-      }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "options": {
-        "testRunner": "vitest"
       }
     }
   }
