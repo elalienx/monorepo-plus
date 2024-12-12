@@ -15,13 +15,16 @@ This project is a "learn by doing" spike with these goals:
 
 ## Project structure
 
-This project has 3 apps and 1 shared library.
-
+This project has 3 apps:
 - 👩‍💼 Admin: Control panel for customer support and sales teams to manage customers loans.
 - 📥 Inbox: Control panel for customers to manage their loans.
 - 🌎 Landing: Homepage designed to attract customers to apply for a loan.
-- 🏛️ Aphrodite: The shared UI library used across apps.
 
+It also has several libraries such as:
+- 🏛️ Aphrodite: The shared UI library used across apps.
+- 🏦 Bank ID: To securely login users. (pending ⏱️)
+- 🆎 Optimizely: To perform A/B testing and controlled feature releases. (pending ⏱️)
+  
 ## Installation
 
 You need to have Node installed before running these commands. (I used Node 20 LTS)
