@@ -1,0 +1,9 @@
+{
+  "name": "mortgage",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "products/mortgage/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project mortgage --web",
+  "targets": {}
+}
