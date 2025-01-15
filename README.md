@@ -39,13 +39,13 @@ npx playwright install
 The apps 👩‍💼 Admin, 📥 Inbox, and 🌎 Landing share the same commands, replace `admin` for `inbox`, and `landing` to run those as well.
 
 ```sh
-# Start projects
+# Start project
 npx nx serve admin
 
 # Unit testing:
 npx nx test admin
 
-# Create production bundles:
+# Create production bundle:
 npx nx build admin
 
 # Lint and format code with Biome:
@@ -64,17 +64,17 @@ npx nx e2e admin-e2e
 # Show graph
 npx nx graph
 
-# Move project
-npx nx g @nx/workspace:move --project my_project --destination folder/my_project
-
-# Remove project
-npx nx g remove my_project
-
 # Create an app project
 npx nx g @nx/react:app apps/my_app
 
 # Create a library project
 npx nx g @nx/react:lib shared/my_lib
+
+# Move project
+npx nx g @nx/workspace:move --project my_project --destination folder/my_project
+
+# Remove project
+npx nx g remove my_project
 ```
 
 ## Tech stack

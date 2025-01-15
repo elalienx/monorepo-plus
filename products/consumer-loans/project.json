@@ -1,0 +1,9 @@
+{
+  "name": "consumer-loans",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "products/consumer-loans/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project consumer-loans --web",
+  "targets": {}
+}
