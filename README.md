@@ -15,66 +15,86 @@ This project is a "learn by doing" spike with these goals:
 
 ## Project structure
 
-This project has 3 apps and 1 shared library.
+This project has 3 apps, 4 business units inside the products/ folder, and third party libraries inside the packages/ folder. The folders are sorted in order of importance.
+
+This project is divided in 3 major groups: our websites inside _apps_, business units inside _products_, and third party libraries inside _packages_.
+
+### 📁 apps
 
 - 👩‍💼 Admin: Control panel for customer support and sales teams to manage customers loans.
 - 📥 Inbox: Control panel for customers to manage their loans.
 - 🌎 Landing: Homepage designed to attract customers to apply for a loan.
+
+### 📁 products
+
+- 💼 Business loans: Loans for small to medium business.
+- 👨🏻 Consumer loans: Loans for the general public.
+- 🏥 Insurances: Add-ons sell on top of the consumer loans. (example)
+- 🏠 Mortgages: Loans for home properties. (example)
+
+### 📁 packages
+
 - 🏛️ Aphrodite: The shared UI library used across apps.
+- 🏦 Bank ID: To authentificate users with their personnummer (SSN).
 
 ## Installation
 
-You need to have Node installed before running these commands. (I used Node 20 LTS)
+Install Node before running these commands. (tested on Node 20 LTS)
+
+Then run these commands in the following order:
 
 ```sh
-# Install dependencies consistently across teams
+# 1. Install dependencies consistently across teams
 pnpm install --frozen-lockfile
 
-# web browsers required for E2E (optional)
-npx playwright install
+# 2. Allow NX commands globally
+pnpm add --global nx@latest
+
+# 3. Web browsers required for E2E
+pnpm add playwright
 ```
 
 ## Main commands
 
-The apps 👩‍💼 Admin, 📥 Inbox, and 🌎 Landing share the same commands, replace `admin` for `inbox`, and `landing` to run those as well.
+The apps 👩‍💼 Admin, 📥 Inbox, and 🌎 Landing share the same commands, replace `admin` with `inbox` or `landing` to run those.
 
 ```sh
 # Start project
-npx nx serve admin
+nx serve admin
 
 # Unit testing:
-npx nx test admin
+nx test admin
 
 # Create production bundle:
-npx nx build admin
+nx build admin
 
 # Lint and format code with Biome:
-npx nx biome-check admin
+nx biome-check admin
 
 # View UI component gallery:
-npx nx run admin:cosmos
+nx run admin:cosmos
 
 # End to End (E2E) test:
-npx nx e2e admin-e2e
+nx e2e admin-e2e
 ```
 
 ## Support commands
 
 ```sh
 # Show graph
-npx nx graph
+nx graph
 
 # Create an app project
-npx nx g @nx/react:app apps/my_app
+nx g @nx/react:app apps/my_app
 
-# Create a library project
-npx nx g @nx/react:lib shared/my_lib
+# Create a business unit or third party library
+nx g @nx/react:lib shared/my_lib
 
 # Move project
-npx nx g @nx/workspace:move --project my_project --destination folder/my_project
+nx g @nx/workspace:move --project my_project --destination folder/my_project
 
 # Remove project
-npx nx g remove my_project
+nx g remove my_project
 ```
 
 ## Tech stack
