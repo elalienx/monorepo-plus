@@ -1,5 +1,5 @@
 {
-  "name": "@monorepo-plus/aphrodite",
+  "name": "@aphrodite",
   "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",

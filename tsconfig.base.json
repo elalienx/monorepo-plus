@@ -15,9 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@monorepo-plus/aphrodite": ["packages/aphrodite/src/index.ts"],
-      "@monorepo-plus/consumer-loans": ["products/consumer-loans/src/index.ts"],
-      "@monorepo-plus/mortgage": ["products/mortgage/src/index.ts"]
+      "@aphrodite": ["packages/aphrodite/src/index.ts"],
+      "@consumer-loans": ["products/consumer-loans/src/index.ts"],
+      "@mortgage": ["products/mortgage/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
