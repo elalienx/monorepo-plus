@@ -14,9 +14,6 @@ This project is a "learn by doing" spike with these goals:
 1. [Tech stack](#tech-stack)
 
 ## Project structure
-
-This project has 3 apps, 4 business units inside the products folder, and several third party libraries inside the packages folder. The folders are listed in order of importance.
-
 This project is divided in 3 major groups: our websites inside _apps_, business units inside _products_, and third party libraries inside _packages_.
 
 ### 📁 apps
