@@ -34,12 +34,6 @@ This project is divided in 3 groups: our websites inside _apps_, business units 
 - 🏛️ Aphrodite: The shared UI library used across apps.
 - 🏦 Bank ID: To authentificate users with their personnummer (SSN).
 
-It also has several libraries such as:
-
-- 🏛️ Aphrodite: The shared UI library used across apps.
-- 🏦 Bank ID: To securely login users. (pending ⏱️)
-- 🆎 Optimizely: To perform A/B testing and controlled feature releases. (pending ⏱️)
-
 ## Installation
 
 Install Node before running these commands. (tested on Node 20 LTS)
