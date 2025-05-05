@@ -26,8 +26,8 @@ This project is divided in 3 groups: our websites inside _apps_, business units 
 
 - 💼 Business loans: Loans for small to medium business.
 - 👨🏻 Consumer loans: Loans for the general public.
-- 🏥 Insurances: Add-ons sell on top of the consumer loans. (example)
-- 🏠 Mortgages: Loans for home properties. (example)
+- 🏥 Insurances: Add-ons sold on top of the consumer loans. (listed here as an example)
+- 🏠 Mortgages: Loans for home properties. (listed here as an example)
 
 ### 📁 packages
 
