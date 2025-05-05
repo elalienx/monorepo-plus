@@ -14,7 +14,7 @@ This project is a "learn by doing" spike with these goals:
 1. [Tech stack](#tech-stack)
 
 ## Project structure
-This project is divided in 3 groups: our websites inside 📁 apps, business units inside 📁 products, and third party libraries inside 📁 packages.
+This project is divided in 3 groups: our websites inside _apps_, business units inside _products_, and third party libraries inside _packages_.
 
 ### 📁 apps
 
